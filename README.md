@@ -18,6 +18,7 @@ This project demonstrates:
 2. **Smooth Scrolling and Interactivity**:  
    - JavaScript-powered smooth scroll for better navigation.  
    - Interactive elements to enhance user experience.
+3. **adding interactivity and dynamic behaviors.**
   
      ## 🛠️ Built With
      - **HTML5**
