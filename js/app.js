@@ -27,15 +27,18 @@ for (let i = 0; i < SectionsAll.length; i++) {
 
 createnavbar();
 
-////
+// Select all list items in the navbar
+const navv = document.querySelectorAll("#navbar__list li");
+const anc = document.querySelectorAll("#navbar__list li a");
+
+
+
+//// Scrolling
 window.onscroll = function(){
     WhenScrrol();
 };
 
 
-// Select all list items in the navbar
-const navv = document.querySelectorAll("#navbar__list li");
-const anc = document.querySelectorAll("#navbar__list li a");
 
 // Function to highlight the section in view
  function WhenScrrol(){
@@ -72,7 +75,17 @@ const anc = document.querySelectorAll("#navbar__list li a");
   });
 
 
-
+// active element
+for(var i =0;i<navv.length;i++){
+    navv[i].addEventListener("click",function(){
+        let current = document.getElementsByClassName("active");
+        if(current.length>0){
+            current[0].className =current[0].className.replace(" active","");
+    
+        }
+        this.className += " active";
+    });
+    }
 
   
   
@@ -99,10 +112,6 @@ ToTopButton.addEventListener("click",()=>{
 
 
  
-
-
-
-
 
 
 

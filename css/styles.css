@@ -227,6 +227,13 @@ section.your-active-class .landing__container::after {
     border: 1px solid #cc1;
     width: 100%;
 }
+
+.active{
+    background-color: #fff;
+    
+}
+
+
 button {
     background-color: rgb(14, 134, 88);
     position: absolute;
